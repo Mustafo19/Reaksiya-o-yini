@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reaksiya o‘yini — Ko‘k to‘p (20s + rekord + daraja)</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>🎯 Reaksiya testi — Ko‘k to‘p</h1>
+
+    <div class="topbar">
+      <span class="pill">⏱️ 20s raund</span>
+      <label class="muted"
+        >Daraja:
+        <select id="difficulty">
+          <option value="easy">Oson</option>
+          <option value="normal" selected>O‘rta</option>
+          <option value="hard">Qiyin</option>
+        </select>
+      </label>
+      <button id="restart" class="primary">Qayta boshlash</button>
+    </div>
+
+    <div class="progress-wrap" aria-label="Vaqt chizig‘i">
+      <div id="progress" class="progress"></div>
+    </div>
+
+    <div class="hud">
+      <div id="score">Ball: 0</div>
+      <div id="timer">Vaqt: 20s</div>
+      <div id="best" class="record">Rekord: 0</div>
+    </div>
+
+    <div id="game" aria-label="3x3 panjara"></div>
+
+    <div id="gameover" class="banner">
+      <div id="finalText">O‘yin tugadi! Yakuniy ball: 0</div>
+      <div class="actions">
+        <button id="again">Qayta o‘ynash</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
